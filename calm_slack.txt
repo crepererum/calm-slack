@@ -1,0 +1,15 @@
+! Title: Calm Slack
+! Description: Fixes Slack redesign by removing gradients.
+! Expires: 7 days
+! Homepage: https://github.com/crepererum/calm-slack
+! License: https://github.com/crepererum/calm-slack/blob/main/README.md#license
+
+! replace theme background w/ solid color
+app.slack.com##.p-theme_background:style(background: rgb(var(--dt_color-plt-gray-5)) !important)
+
+! remove box shadows
+app.slack.com##.p-client_workspace__layout, .p-view_contents--primary:style(box-shadow: none !important)
+
+! do NOT color-invert the currently selected channel
+app.slack.com##.p-channel_sidebar__channel--selected:style(background-color: rgb(var(--dt_color-plt-gray-10)) !important; color: rgb(var(--dt_color-content-pry)) !important)
+
